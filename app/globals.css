@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --verde: #1a6b3c;
+  --verde-escuro: #0d4424;
+  --verde-claro: #2d9e5f;
+  --verde-palido: #e8f5ee;
+  --terra: #8B5E3C;
+  --areia: #f5f0e8;
+  --areia-escura: #e8e0d0;
+  --preto: #0f1a0e;
+  --texto: #1a2b18;
+  --cinza: #6b7c6a;
+  --branco: #fafaf8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--branco);
+  color: var(--texto);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Noise overlay — fixed, very low opacity, pinned to viewport */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+  mix-blend-mode: multiply;
+}
+
+main,
+header,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--verde-claro);
+  color: var(--branco);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Display H1/H2 wrapper */
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: var(--preto);
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cinza);
+}
+
+/* Hairlines */
+.hairline {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(26, 107, 60, 0.25),
+    transparent
+  );
+}
+
+/* Animated conic border (used on .destaque PlanCard) */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotate-border {
+  to {
+    --angle: 360deg;
+  }
+}
+.destaque-border {
+  position: relative;
+  isolation: isolate;
+}
+.destaque-border::before {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--angle),
+    var(--verde-claro),
+    var(--verde-escuro),
+    var(--verde-claro)
+  );
+  animation: rotate-border 8s linear infinite;
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
