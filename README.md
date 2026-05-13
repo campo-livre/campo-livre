@@ -2,7 +2,7 @@
 
 Site institucional do **Campo Livre** — plataforma SaaS B2B para monitoramento mensal automático do CAR (Cadastro Ambiental Rural) da carteira de produtores rurais, voltada para agrônomos autônomos no Brasil.
 
-> O sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.
+> A garantia de elegibilidade ao crédito rural. Monitora o CAR da carteira todo mês e avisa antes do banco bloquear.
 
 ## Stack
 

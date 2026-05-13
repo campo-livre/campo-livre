@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Campo Livre — O sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.";
+  "Campo Livre — A garantia de elegibilidade ao crédito rural. Monitoramento mensal do CAR da carteira de produtores, com aviso antes do banco bloquear.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
