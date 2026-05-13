@@ -30,10 +30,11 @@ export default function FinalCTA() {
             lineHeight: 1.04,
           }}
         >
-          30 dias grátis.
-          <br />
-          <span className="italic">Sem cartão de crédito.</span>
+          Comece a garantir as carteiras dos seus produtores.
         </h2>
+        <p className="mt-6 text-white/85 text-[22px] md:text-[26px] leading-tight italic font-display">
+          30 dias grátis. Sem cartão de crédito.
+        </p>
         <p className="mt-7 text-white/80 text-[18px] leading-[1.65] max-w-xl mx-auto">
           Cadastre sua carteira hoje. No dia 1 do próximo mês, você já recebe
           o primeiro relatório no WhatsApp. Se não gostar, cancela sem nenhum

@@ -24,8 +24,8 @@ async function loadGoogleFont(
 }
 
 export default async function Image() {
-  const headlineA = "Seu cliente não pode";
-  const headlineB = "perder o crédito rural";
+  const headlineA = "A garantia";
+  const headlineB = "que o crédito do seu cliente não vai travar";
   const subhead = "Monitoramento mensal automático do CAR — Campo Livre";
   const brand = "Campo Livre";
   const allText = `${headlineA} ${headlineB} ${subhead} ${brand}`;
@@ -107,16 +107,27 @@ export default async function Image() {
             style={{
               fontFamily: "Playfair Display",
               fontWeight: 900,
-              fontSize: 86,
               lineHeight: 1.02,
-              letterSpacing: -2,
+              letterSpacing: -1.5,
               display: "flex",
               flexDirection: "column",
             }}
           >
-            <span>{headlineA}</span>
-            <span style={{ color: "#dff0d0", fontStyle: "italic" }}>
-              {headlineB}
+            <span style={{ fontSize: 92 }}>{headlineA}</span>
+            <span
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                color: "#dff0d0",
+                fontStyle: "italic",
+                fontSize: 58,
+                marginTop: 16,
+                letterSpacing: -1,
+                lineHeight: 1.08,
+              }}
+            >
+              <span>que o crédito do seu cliente</span>
+              <span>não vai travar</span>
             </span>
           </div>
 

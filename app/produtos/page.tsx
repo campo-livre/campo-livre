@@ -55,11 +55,16 @@ export default function ProdutosPage() {
             className="font-display font-black tracking-tight mt-4"
             style={{ fontSize: "clamp(40px, 5.5vw, 72px)", lineHeight: 1.04 }}
           >
-            Três planos. <em className="not-italic italic text-verde">Sem armadilha.</em>
+            Garantia mensal.{" "}
+            <em className="not-italic italic text-verde">
+              Três faixas, conforme o tamanho da sua carteira.
+            </em>
           </h1>
           <p className="mt-7 text-[19px] text-texto/80 leading-[1.65] max-w-2xl">
-            Escolha conforme o tamanho da carteira. Comece grátis 30 dias em
-            qualquer um deles. Cancele quando quiser, sem multa.
+            Cada plano é uma camada de proteção contra o pior cenário do
+            agrônomo: descobrir que o crédito do seu cliente foi bloqueado um
+            dia antes do vencimento da safra. Comece com 30 dias grátis.
+            Cancele quando quiser.
           </p>
         </div>
       </Section>

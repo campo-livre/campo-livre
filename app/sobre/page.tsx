@@ -48,8 +48,10 @@ export default function SobrePage() {
             className="font-display font-black tracking-tight mt-4"
             style={{ fontSize: "clamp(40px, 5.5vw, 72px)", lineHeight: 1.04 }}
           >
-            Construído por quem entende a{" "}
-            <em className="not-italic italic text-verde">fazenda por dentro</em>
+            Construído por quem viu o crédito ser bloqueado{" "}
+            <em className="not-italic italic text-verde">
+              de dentro da fazenda
+            </em>
           </h1>
           <p className="mt-7 text-[19px] text-texto/80 leading-[1.65] max-w-2xl">
             Campo Livre não nasceu em escritório de São Paulo. Nasceu da

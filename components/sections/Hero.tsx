@@ -106,7 +106,7 @@ export default function Hero() {
               <span className="absolute inset-0 rounded-full bg-verde-claro opacity-60 animate-pulseDot" />
               <span className="relative h-1.5 w-1.5 rounded-full bg-verde-claro" />
             </span>
-            Novo para agrônomos no Brasil
+            Garantia de elegibilidade ao crédito rural 🌾
           </span>
 
           <h1
@@ -118,17 +118,15 @@ export default function Hero() {
           >
             <span className="block overflow-hidden">
               <span data-hero-line className="block">
-                Seu cliente não pode
+                A garantia
               </span>
             </span>
             <span className="block overflow-hidden">
-              <span data-hero-line className="block">
-                perder{" "}
-                <em className="not-italic">
-                  <span className="font-display italic text-verde">
-                    o crédito rural
-                  </span>
-                </em>
+              <span
+                data-hero-line
+                className="block font-display italic text-verde"
+              >
+                que o crédito do seu cliente não vai travar
               </span>
             </span>
           </h1>
@@ -137,9 +135,10 @@ export default function Hero() {
             data-hero-sub
             className="mt-7 max-w-xl text-[19px] leading-[1.65] text-texto/80"
           >
-            Campo Livre monitora o CAR de toda a sua carteira de produtores e
-            avisa <strong className="text-preto">antes</strong> do banco
-            bloquear. Você chega na frente — antes do telefonema furioso.
+            Campo Livre monitora o CAR de toda a sua carteira{" "}
+            <strong className="text-preto">todo mês</strong> e te avisa antes
+            do banco bloquear — para que o produtor que confia em você não
+            perca a safra por causa de uma pendência que ninguém viu.
           </p>
 
           <div data-hero-cta className="mt-9 flex flex-wrap items-center gap-4">

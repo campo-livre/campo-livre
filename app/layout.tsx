@@ -31,26 +31,28 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Campo Livre — Monitoramento de CAR para agrônomos | Antes do banco bloquear o crédito",
+      "Campo Livre — Garantia de elegibilidade ao crédito rural para agrônomos | Monitoramento mensal de CAR",
     template: "Campo Livre — %s",
   },
   description:
-    "Plataforma para o agrônomo autônomo monitorar o CAR da carteira de produtores e avisar antes do crédito rural ser bloqueado. Relatório mensal no WhatsApp. R$ 197/mês.",
+    "A garantia mensal de que o CAR dos produtores da sua carteira está em ordem — para que o crédito rural não seja bloqueado quando seu cliente mais precisar.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Campo Livre",
     locale: "pt_BR",
     url: SITE_URL,
-    title: "Campo Livre — Monitoramento de CAR para agrônomos",
+    title:
+      "Campo Livre — Garantia de elegibilidade ao crédito rural para agrônomos",
     description:
-      "Sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.",
+      "A garantia mensal de que o CAR dos produtores da sua carteira está em ordem — para que o crédito rural não seja bloqueado quando seu cliente mais precisar.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campo Livre — Monitoramento de CAR para agrônomos",
+    title:
+      "Campo Livre — Garantia de elegibilidade ao crédito rural para agrônomos",
     description:
-      "Sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.",
+      "A garantia mensal de que o CAR dos produtores da sua carteira está em ordem — para que o crédito rural não seja bloqueado quando seu cliente mais precisar.",
   },
 };
 

@@ -10,10 +10,11 @@ export default function DepoimentosSection() {
         tag="Validação de mercado"
         title={
           <>
-            O problema é real.
-            <br />
-            Quem está no campo{" "}
-            <span className="italic text-verde">confirma</span>.
+            Quem opera o crédito rural já reconhece:{" "}
+            <span className="italic text-verde">
+              a garantia precisa estar na mão do agrônomo
+            </span>
+            .
           </>
         }
         lead="Acima, o próprio credor reconhecendo. Abaixo, três agrônomos no Paraná em maio de 2026 — frases ditas, não roteirizadas."
