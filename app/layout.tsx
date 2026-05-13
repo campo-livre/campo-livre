@@ -24,8 +24,11 @@ const dmMono = DM_Mono({
   display: "swap",
 });
 
+// NOTA: trocar para "https://campolivre.agr.br" quando o domínio próprio subir.
+const SITE_URL = "https://campo-livre-sigma.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://campolivre.agr.br"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default:
       "Campo Livre — Monitoramento de CAR para agrônomos | Antes do banco bloquear o crédito",
@@ -33,17 +36,21 @@ export const metadata: Metadata = {
   },
   description:
     "Plataforma para o agrônomo autônomo monitorar o CAR da carteira de produtores e avisar antes do crédito rural ser bloqueado. Relatório mensal no WhatsApp. R$ 197/mês.",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Campo Livre",
     locale: "pt_BR",
-    title:
-      "Campo Livre — Monitoramento de CAR para agrônomos",
+    url: SITE_URL,
+    title: "Campo Livre — Monitoramento de CAR para agrônomos",
     description:
       "Sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.",
   },
   twitter: {
     card: "summary_large_image",
+    title: "Campo Livre — Monitoramento de CAR para agrônomos",
+    description:
+      "Sistema de alarme do agrônomo. Monitora o CAR da carteira e avisa antes do crédito travar no banco.",
   },
 };
 
@@ -55,8 +62,8 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Campo Livre",
-  url: "https://campolivre.agr.br",
-  logo: "https://campolivre.agr.br/og-image.png",
+  url: SITE_URL,
+  logo: `${SITE_URL}/opengraph-image`,
   description:
     "Plataforma SaaS B2B para monitoramento mensal automático do Cadastro Ambiental Rural (CAR) da carteira de produtores rurais, voltada para agrônomos autônomos no Brasil.",
   foundingDate: "2026",

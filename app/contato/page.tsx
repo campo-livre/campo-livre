@@ -6,11 +6,78 @@ import Section, { SectionHeader } from "@/components/ui/Section";
 import Accordion from "@/components/ui/Accordion";
 import { IconWhatsApp } from "@/components/illustrations/Icons";
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "O Campo Livre é seguro? Como vocês tratam os dados dos produtores?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Os dados do CAR são públicos — qualquer pessoa pode consultar no SICAR. O Campo Livre só acessa o que já é público, e armazena o histórico de cada propriedade no nosso banco (Supabase, hospedado no Brasil) com criptografia em trânsito e em repouso. Nunca compartilhamos com terceiros.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Eu sou agrônomo CLT de cooperativa/revenda. Funciona pra mim?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Funciona, mas você vai precisar avaliar com seu empregador se a cooperativa/revenda paga ou se você assina como pessoa física. O produto não muda — o relatório mensal continua chegando no seu WhatsApp pessoal.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Vocês atendem outros estados além do PR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim. O Campo Livre funciona em qualquer estado do Brasil, porque o SICAR é federal. Hoje a maioria dos nossos primeiros clientes está no PR, SC e MS, mas o produto não tem restrição geográfica.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Vocês também atendem produtor rural direto, sem agrônomo no meio?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Não. O produto é desenhado para o profissional que atende vários produtores. Se você é produtor e quer monitorar sua própria propriedade, peça para o seu agrônomo conhecer o Campo Livre.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "E se o Congresso derrubar as Resoluções CMN 5.193 e 5.268?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O CAR continua obrigatório por lei. O art. 78-A da Lei 12.651/2012 (Código Florestal) determina, desde 31/12/2017, que instituições financeiras só concedem crédito agrícola para imóveis inscritos no CAR. Isso é lei ordinária federal, não resolução do CMN. Mesmo se os PDLs em tramitação (178/2026 e 176/2026) forem aprovados, derrubam apenas a fiscalização automática via PRODES — a obrigatoriedade do CAR ativo permanece. O Campo Livre monitora o CAR, então o produto segue útil em qualquer cenário.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Qual a posição do Banco Central sobre essas regras?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Mantida. Em dezembro de 2025, o Banco Central editou a Resolução CMN 5.268 não para revogar a fiscalização, mas para adiar o cronograma (passou de 02/01/2026 para 01/04/2026 para imóveis acima de 4 módulos fiscais). É calibração, não recuo. A CNA ajuizou uma ADPF no STF em 15/04/2026 buscando suspensão cautelar — o cenário mais provável é de calibração jurisprudencial (notificação prévia ao produtor), não derrubada.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Como vocês acessam o CAR dos meus clientes legalmente?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pelo mecanismo oficial de Representante Técnico do SICAR. O produtor entra em car.gov.br, vai em 'Gerenciar Vínculos' e te vincula como representante. É o fluxo regulamentado pelo governo.",
+      },
+    },
+  ],
+};
+
 export default function ContatoPage() {
   const [sent, setSent] = useState(false);
 
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Section tone="branco" className="!py-0">
         <div className="pt-32 md:pt-40 pb-12 text-balance max-w-3xl">
           <span className="label-mono text-verde">Contato</span>

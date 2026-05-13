@@ -143,6 +143,22 @@ const faqJsonLd = {
         text: "Não. O relatório chega no seu WhatsApp normal. Se quiser ver o histórico ou cadastrar mais produtores, abre o link da plataforma no navegador.",
       },
     },
+    {
+      "@type": "Question",
+      name: "E se o produtor não quiser me vincular como representante técnico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Você não consegue monitorar esse produtor pelo SICAR. Mas pode acompanhar pela base PRODES e pelas listas públicas de embargo, que cobrem boa parte dos riscos.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quanto tempo demora para começar a receber relatórios?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O primeiro relatório chega no dia 1 do mês seguinte ao seu cadastro. Se cadastrar hoje, recebe no início do próximo mês.",
+      },
+    },
   ],
 };
 
