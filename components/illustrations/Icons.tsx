@@ -98,6 +98,18 @@ export function IconMap({ className = "h-6 w-6", strokeWidth }: IconProps) {
   );
 }
 
+export function IconWindow({ className = "h-6 w-6", strokeWidth }: IconProps) {
+  // "janela temporal" — frame com seta retornando dentro
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base(strokeWidth)} aria-hidden>
+      <rect x="3" y="4" width="18" height="16" rx="2" />
+      <path d="M3 9h18" />
+      <path d="M15 14a3 3 0 1 0-3 3" />
+      <path d="m13 13-1 4-3-1" />
+    </svg>
+  );
+}
+
 export function IconWhatsApp({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>

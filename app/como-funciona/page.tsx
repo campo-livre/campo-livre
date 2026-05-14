@@ -14,6 +14,7 @@ import {
   IconShield,
   IconRefresh,
   IconMap,
+  IconWindow,
 } from "@/components/illustrations/Icons";
 
 export const metadata: Metadata = {
@@ -80,6 +81,21 @@ const steps: Step[] = [
   },
   {
     n: "05",
+    icon: <IconWindow className="h-6 w-6" />,
+    title: "Benefício extra agora: reapresentação",
+    body: (
+      <>
+        Se entre <strong>01/04/2026 e 12/05/2026</strong> algum cliente seu
+        teve proposta de crédito recusada por restrição PRODES, a{" "}
+        <strong>CMN 5.303</strong> abriu janela para reapresentação. O Campo
+        Livre identifica esses casos na primeira varredura da sua carteira e
+        te mostra exatamente quem pode voltar para o banco.
+      </>
+    ),
+    highlight: true,
+  },
+  {
+    n: "06",
     icon: <IconAlert className="h-6 w-6" />,
     title: "Você age antes do banco bloquear",
     body: (
@@ -91,7 +107,7 @@ const steps: Step[] = [
     ),
   },
   {
-    n: "06",
+    n: "07",
     icon: <IconRefresh className="h-6 w-6" />,
     title: "Tudo fica registrado",
     body: (
@@ -101,7 +117,6 @@ const steps: Step[] = [
         detalhe. <strong>Vira documentação técnica da sua consultoria.</strong>
       </>
     ),
-    highlight: true,
   },
 ];
 

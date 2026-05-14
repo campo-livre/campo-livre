@@ -306,6 +306,23 @@ export default function SobrePage() {
                 PRODES automática); o que não muda é a exigência basal.
               </p>
               <p>
+                Em <strong className="text-preto">12 de maio de 2026</strong>,
+                em reunião extraordinária, o CMN publicou a{" "}
+                <strong className="text-preto">Resolução 5.303/2026</strong>,
+                que adiou o gatilho de bloqueio automático por PRODES —
+                passou a valer a partir de{" "}
+                <strong className="text-preto">04/01/2027</strong> para
+                imóveis acima de 15 módulos fiscais,{" "}
+                <strong className="text-preto">01/07/2027</strong> para 4 a
+                15 módulos, e <strong className="text-preto">janeiro de 2028</strong>{" "}
+                para imóveis menores. A Resolução{" "}
+                <strong className="text-preto">não revoga</strong> a 5.193/2024,
+                que continua vigente: CAR irregular segue bloqueando crédito
+                rural automaticamente. O Campo Livre acompanha cada
+                movimento regulatório para que sua carteira esteja sempre
+                alinhada com a regra do mês.
+              </p>
+              <p>
                 O Campo Livre monitora o CAR, que é a obrigação estrutural.
                 PRODES é camada adicional.{" "}
                 <strong className="text-preto">

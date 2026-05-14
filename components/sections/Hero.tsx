@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/ui/Button";
-import StatNumber from "@/components/ui/StatNumber";
 import WhatsAppMockup from "@/components/illustrations/WhatsAppMockup";
 
 if (typeof window !== "undefined") {
@@ -155,26 +154,19 @@ export default function Hero() {
           >
             {[
               {
+                value: "91%",
+                label:
+                  "dos CARs ainda sem validação oficial — risco ativo desde jan/2025",
+              },
+              {
                 value: "9 em 10",
                 label:
-                  "alertas PRODES são falso-positivo, segundo o próprio Banco do Brasil (Wanda Ribeiro, superintendência MT, abril/2026)",
+                  "alertas PRODES são falso-positivo, segundo Wanda Ribeiro (BB-MT). Mesmo assim o banco bloqueia.",
               },
               {
-                value: (
-                  <StatNumber
-                    end={5.4}
-                    suffix=" milhões"
-                    decimals={1}
-                    duration={2.5}
-                  />
-                ),
+                value: "04/01/2027",
                 label:
-                  "Apontamentos PRODES até outubro/2025 — fonte: Datagro",
-              },
-              {
-                value: "CMN 5.193",
-                label:
-                  "Resolução vigente desde jan/2025 que bloqueia crédito por CAR irregular",
+                  "data em que o gatilho PRODES volta para imóveis acima de 15 módulos fiscais (CMN 5.303). 8 meses para organizar a carteira.",
               },
             ].map((it, i) => (
               <div key={i} className="bg-white p-5">
